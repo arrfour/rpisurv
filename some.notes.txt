@@ -3,7 +3,9 @@ Some Notes
     - rtsp_url: "rtsp://x.x.x.x/h264" will NOT work but
     - rtsp_url: "rtsp://x.x.x.x:554/h264" will work
 
-For full screen, single viewer, set nr_of_columns: "1"
+Multiple Screen Observations------------------------------------------------------------------
+My use called for a single camera so for full screen, single viewer, set nr_of_columns: "1"
+My test used an older display which had issues showing more than 3 sources.
 
         #An Example Cam
         - rtsp_url: "rtsp://10.50.20.40:554/h264"
