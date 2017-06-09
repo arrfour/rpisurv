@@ -1,0 +1,11 @@
+Some Notes
+# RTSP addresses REQUIRE port explicit in config "/etc/rpisurv"
+    - rtsp_url: "rtsp://x.x.x.x/h264" will NOT work but
+    - rtsp_url: "rtsp://x.x.x.x:554/h264" will work
+
+For full screen, single viewer, set nr_of_columns: "1"
+
+        #An Example Cam
+        - rtsp_url: "rtsp://10.50.20.40:554/h264"
+        
+        
