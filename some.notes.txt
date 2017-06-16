@@ -11,3 +11,16 @@ My test used an older display which had issues showing more than 3 sources.
         - rtsp_url: "rtsp://10.50.20.40:554/h264"
         
         
+I'm having consistent issues displaying 2 columns of streams to a 1080p display. I can display 2x1 (columnxrow) of 1080p stream with no issue, but any additional beyond a single column results in "out of range" or "standby mode" on the display via both HDMI and DVI testing.
+If I explicitly edit my "/boot/config.txt" with the following to force 720p, everything works as expected.
+
+# manual hdmi display mode
+#hdmi_ignore_edid=0xa5000080
+#hdmi_group=2
+# explicit 1920x1200 at 60hz
+#hdmi_mode=68
+# explicit 720P
+#hdmi_mode=85
+# explicit 1080p
+#hdmi_mode=82
+
