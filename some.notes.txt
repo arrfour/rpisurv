@@ -24,3 +24,21 @@ If I explicitly edit my "/boot/config.txt" with the following to force 720p, eve
 # explicit 1080p
 #hdmi_mode=82
 
+What Is the Stream URL for OpenEye IP Cameras?
+It is possible to connect to OpenEye IP cameras using third party software like VLC media player (http://www.videolan.org).
+
+To connect some types of software will need to know the stream URL. All OpenEye IP cameras are capable of delivering two RTSP streams, as well as streaming MJPEG over HTTP. The stream URLs are listed below.
+
+rtsp://<ip address>/jpeg
+
+rtsp://<ip address>/mpeg4
+
+rtsp://<ipaddress>/h264 - Stream 1
+
+rtsp://<ipaddress>/h264_2 - Stream 2
+
+rtsp://<ipaddress>/h264_3 - Stream 3
+
+http://<ipaddress>:8008
+
+The MJPEG over HTTP stream is identified by a port number. The default port is 8008; this port can be configured in the cameras Network page.
